@@ -29,7 +29,6 @@ void eseguiLivello215() {
     pausa();
 
     do {
-        // Stampa il menu delle scelte multiple
 	std::cout<<""<<std::endl;
         std::cout << "\nCosa fai?" << std::endl;
 	std::cout<<""<<std::endl;
@@ -46,16 +45,14 @@ void eseguiLivello215() {
         std::cout << "Seleziona un'opzione: ";
 	std::cout << "" <<std::endl;
 
-        // Leggi la scelta dell'utente
         std::cin >> scelta;
 
-        // Esegui l'azione corrispondente alla scelta
         switch (scelta) {
             case 1: {
                 int sceltaTorcia;
 		std::cout<<""<<std::endl;
                 std::cout << "Hai trovato una torcia. La accendi e illumini la stanza." << std::endl;
-                pausa(); // Aggiungi una breve pausa
+                pausa(); 
                 std::cout << "1. Esplora la stanza illuminata." << std::endl;
                 std::cout << "2. Cerca una chiave nella stanza." << std::endl;
                 std::cout << "3. Spegni la torcia e ritorna nell'oscurità." << std::endl;
@@ -223,7 +220,7 @@ void eseguiLivello215() {
                 int sceltaRumori;
 		std::cout << "" <<std::endl;
                 std::cout << "Ascolti attentamente i rumori nell'oscurità, ma non senti nulla di minaccioso." << std::endl;
-                pausa(); // Aggiungi una breve pausa
+                pausa(); 
                 std::cout << "1. Continua ad ascoltare." << std::endl;
                 std::cout << "22. Fai un passo avanti nell'oscurità." << std::endl;
                 std::cout << "3. Ritorna indietro." << std::endl;
@@ -298,7 +295,7 @@ void eseguiLivello215() {
     		int sceltaPareti;
 		std::cout<<""<<std::endl;
     		std::cout << "Tocchi le pareti, ma sembrano essere fatte di pietra fredda e scivolosa." << std::endl;
-    		pausa(); // Aggiungi una breve pausa
+    		pausa(); 
     		std::cout << "1. Continua a seguire le pareti." << std::endl;
     		std::cout << "2. Cerca un'interruzione nella superficie delle pareti." << std::endl;
     		std::cout << "3. Tenta di arrampicarti sulle pareti." << std::endl;
@@ -386,7 +383,7 @@ void eseguiLivello215() {
     		int sceltaEsplorazione;
 		std::cout<<""<<std::endl;
     		std::cout << "Decidi di esplorare alla cieca, ma è estremamente pericoloso." << std::endl;
-    		pausa(); // Aggiungi una breve pausa
+    		pausa(); 
     		std::cout << "1. Prosegui con cautela." << std::endl;
     		std::cout << "2. Torna indietro." << std::endl;
     		std::cout << "3. Cerca una parete da seguire." << std::endl;
@@ -441,10 +438,9 @@ void eseguiLivello215() {
     		}
     		break;
 	}
-	// ... Ripeti lo stesso pattern per gli altri casi ...
         default:
              std::cout << "Scelta non valida. Riprova." << std::endl;
              break;
         }
-    } while (true); // Continua finché l'utente non prende una decisione finale
+    } while (true); 
 }
